@@ -1,0 +1,16 @@
+/**
+* Author: Brian Winward
+*/
+
+
+/**
+* Aspect Ratio Mixin
+* Usage: Pass in aspect ratio for element to reflect
+* Example: @include aspect_ratio(16px, 9px);
+*/
+@mixin aspect_ratio($width, $height) {
+  padding-bottom: $height/$width * 100%;
+  height: 0;
+  width: 100%;
+  position: relative;
+}
